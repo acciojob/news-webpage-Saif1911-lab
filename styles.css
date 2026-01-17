@@ -1,1 +1,93 @@
 /*  your css code here. If applicable */
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #011e29;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 25px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+/* Layout wrapper using grid */
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "articles main pictorial";
+    gap: 25px;
+}
+
+/* Assign grid areas */
+.header {
+    grid-area: header;
+}
+
+.latest-news-section {
+    grid-area: articles;
+}
+
+.main {
+    grid-area: main;
+}
+
+.pictorial-news-section{
+    grid-area: pictorial;
+}
+
+/* Common card style */
+.latest-news-section,
+.main,
+.pictorial-news-section{
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+/* Latest articles section */
+.latest-news-section h2 {
+    margin-bottom: 15px;
+}
+
+.latest-news-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.latest-news-section li {
+    margin-bottom: 8px;
+}
+
+/* Main article */
+.main h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.main p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Pictorial news */
+.pictorial-news-section img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
