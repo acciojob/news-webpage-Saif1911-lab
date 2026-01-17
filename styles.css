@@ -49,6 +49,7 @@ header {
 
 .pictorial-news-section{
     grid-area: pictorial;
+	text-align: center;
 }
 
 /* Common card style */
