@@ -13,7 +13,7 @@ body {
 }
 
 /* Header */
-.header {
+ header {
     background-color: #011e29;
     color: white;
     text-align: center;
@@ -35,7 +35,7 @@ body {
 }
 
 /* Assign grid areas */
-.header {
+header {
     grid-area: header;
 }
 
